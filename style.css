@@ -2,11 +2,27 @@ body {
     display: flex;
     flex-direction: column;
     border: 2px solid red;
+    
 }
+
+a {
+    text-decoration: none;
+    color: #F9FAF8;
+    border: 2px solid red;
+  }  
 
 button {
     color: #F9FAF8;
     background-color: #3882F6;
+    border: 2px solid red;
+}
+
+.top-content,
+.info,
+.quote,
+.bottom-banner,
+.footer {
+    padding: 0 200px;
 }
 
 .top-content,
@@ -14,6 +30,7 @@ button {
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
+    color: #F9FAF8;
     border: 2px solid red;
 }
 
@@ -26,7 +43,6 @@ button {
 
 .header-logo {
     font-size: 24px;
-    color: #F9FAF8;
     border: 2px solid red;
 }
 
@@ -40,6 +56,7 @@ button {
 .hero-content {
     display: flex;
     flex-direction: column;
+    flex-basis: 50%;
     border: 2px solid red;
 }
 
@@ -58,6 +75,7 @@ button {
 
 .hero-image {
     color: #E5E7EB;
+    flex-basis: 50%;
     border: 2px solid red;
 }
 
@@ -65,6 +83,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 2px solid red;
 }
 
 .info-title {
@@ -74,8 +93,61 @@ button {
 .info-link-row {
     display: flex;
     flex-direction: row;
+    border: 2px solid red;
 }
 
-/* .footer {
-    background-color: #1F2937;
-} */
+.info-link {
+    border: 2px solid red;
+}
+
+.info-link-text {
+    border: 2px solid red;
+}
+
+.info-link-image {
+    border: 2px solid red;
+}
+
+.quote {
+    border: 2px solid red;
+    background-color: #E5E7EB;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    border: 2px solid red;
+}
+
+.quote-attribution {
+    border: 2px solid red;
+}
+
+.bottom-banner {
+    display: flex;
+    border: 2px solid red;
+}
+
+.bottom-banner-content {
+    border: 2px solid red;
+}
+
+.bottom-banner-title {
+    border: 2px solid red;
+}
+
+.bottom-banner-text {
+    border: 2px solid red;
+}
+
+.bottom-banner-signup-button {
+    border: 2px solid red;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+}
