@@ -1,26 +1,29 @@
 body {
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
-    
+    margin: 0;
+    padding: 0;    
 }
 
 a {
     text-decoration: none;
     color: #F9FAF8;
-    border: 2px solid red;
   }  
 
 button {
     color: #F9FAF8;
     background-color: #3882F6;
-    border: 2px solid red;
+}
+
+button:hover {
+    color: #3882F6;
+    background-color: #F9FAF8;
 }
 
 .top-content,
 .info,
 .quote,
-.bottom-banner,
+.bottom-banner-box,
 .footer {
     padding: 0 200px;
 }
@@ -31,25 +34,34 @@ button {
     flex-direction: column;
     background-color: #1F2937;
     color: #F9FAF8;
-    border: 2px solid red;
 }
 
 .header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    border: 2px solid red;
+    align-items: center;
 }
 
 .header-logo {
     font-size: 24px;
-    border: 2px solid red;
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.header-links a:nth-of-type(1), 
+.header-links a:nth-of-type(2) {
+  margin-right: 20px;
+}
+
+.header-links a:last-of-type {
+  margin-right: 0;
 }
 
 .hero {
     display: flex;
-    flex-direction: row;
-    border: 2px solid red;
     justify-content: space-between;
 }
 
@@ -57,26 +69,43 @@ button {
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
-    border: 2px solid red;
+    margin: 50px 0px;
 }
 
 .hero-title {
     font-size: 48px;
     font-weight: 800;
     color: #F9FAF8;
-    border: 2px solid red;
+    margin: 5px 0px;
 }
 
 .hero-text {
     font-size: 18px;
     color: #E5E7EB;
-    border: 2px solid red;
+    margin: 5px 0px;
 }
 
-.hero-image {
+.hero-signup-button {
+    font-weight: 800px;
+    margin: 5px 0px;
+    align-self: flex-start;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.hero-image-container {
+    display: flex;
     color: #E5E7EB;
     flex-basis: 50%;
-    border: 2px solid red;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.space-invaders {
+    display: flex;
+    width: 350px;
+    border: 2px solid #3882F6;
+    border-radius: 5px;
 }
 
 .info {
@@ -87,12 +116,14 @@ button {
 }
 
 .info-title {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 800;
     border: 2px solid red;
 }
 
 .info-link-row {
     display: flex;
-    flex-direction: row;
     border: 2px solid red;
 }
 
@@ -126,10 +157,12 @@ button {
 
 .bottom-banner {
     display: flex;
+    background-color: #3882F6;
     border: 2px solid red;
 }
 
 .bottom-banner-content {
+    color: #E5E7EB;
     border: 2px solid red;
 }
 
@@ -142,7 +175,8 @@ button {
 }
 
 .bottom-banner-signup-button {
-    border: 2px solid red;
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
 }
 
 .footer {
