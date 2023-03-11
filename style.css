@@ -2,13 +2,13 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 0;    
+    padding: 0;
 }
 
 a {
     text-decoration: none;
     color: #F9FAF8;
-  }
+}
 
 img {
     border: 5px solid #3882F6;
@@ -34,7 +34,7 @@ button:hover {
 }
 
 .top-content,
-.footer {
+.footer-container {
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
@@ -44,9 +44,9 @@ button:hover {
 .header {
     display: flex;
     /* justify-content: space-between; */
-    gap: 250px;
+    gap: 325px;
     padding: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     align-items: center;
     justify-content: center;
 }
@@ -60,20 +60,20 @@ button:hover {
     gap: 10px;
 }
 
-.header-links a:nth-of-type(1), 
+.header-links a:nth-of-type(1),
 .header-links a:nth-of-type(2) {
-  margin-right: 20px;
+    margin-right: 20px;
 }
 
 .header-links a:last-of-type {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .hero {
     display: flex;
     justify-content: center;
     gap: 50px
-    /* justify-content: space-between; */
+        /* justify-content: space-between; */
 }
 
 .hero-content {
@@ -148,8 +148,8 @@ button:hover {
 .info-link {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     /* border: 2px solid red; */
 }
@@ -159,7 +159,14 @@ button:hover {
     align-self: center;
     height: auto;
     width: 175px;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
     /* border: 2px solid red; */
+}
+
+.info-link-image:hover {
+    opacity: .5;
 }
 
 .info-link-text {
@@ -173,7 +180,7 @@ button:hover {
 .quote {
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     background-color: #E5E7EB;
     justify-content: center;
     align-items: center;
@@ -182,7 +189,8 @@ button:hover {
 .quote-container {
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
+    margin: 100px 0px;
+    /* border: 2px solid red; */
 }
 
 .quote-text {
@@ -191,41 +199,66 @@ button:hover {
     color: #1F2937;
     width: 900px;
     justify-self: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .quote-attribution {
     align-self: flex-end;
-    border: 2px solid red;
+    margin-top: 25px;
+    font-weight: 900px;
+    /* border: 2px solid red; */
+}
+
+.bottom-banner-box {
+    display: flex;
+    justify-content: center;
 }
 
 .bottom-banner {
     display: flex;
+    justify-content: space-around;
     background-color: #3882F6;
-    border: 2px solid red;
+    width: 900px;
+    margin: 75px 0px;
+    border: 2px solid #3882F6;
+    border-radius: 10px;
 }
 
 .bottom-banner-content {
     color: #E5E7EB;
-    border: 2px solid red;
+    margin: 25px 0px;
+    justify-content: center;
+    /* border: 2px solid red; */
 }
 
 .bottom-banner-title {
-    border: 2px solid red;
+    display: flex;
+    font-weight: 800px;
+    /* border: 2px solid red; */
 }
 
-.bottom-banner-text {
+/* .bottom-banner-text {
     border: 2px solid red;
-}
+} */
 
 .bottom-banner-signup-button {
     border: 2px solid #E5E7EB;
     border-radius: 5px;
+    font-weight: 800px;
+    margin: 5px 0px;
+    align-self: center;
+    padding: 5px 20px;
+}
+
+.footer-container {
+    /* display: flex; */
+    /* justify-content: center; */
 }
 
 .footer {
     display: flex;
     justify-content: center;
+    margin: 25px 0px;
     align-items: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
