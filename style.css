@@ -8,7 +8,12 @@ body {
 a {
     text-decoration: none;
     color: #F9FAF8;
-  }  
+  }
+
+img {
+    border: 2px solid #3882F6;
+    border-radius: 5px;
+}
 
 button {
     color: #F9FAF8;
@@ -104,8 +109,8 @@ button:hover {
 .space-invaders {
     display: flex;
     width: 350px;
-    border: 2px solid #3882F6;
-    border-radius: 5px;
+    /* border: 2px solid #3882F6; */
+    /* border-radius: 5px; */
 }
 
 .info {
@@ -119,6 +124,7 @@ button:hover {
     font-size: 36px;
     color: #1F2937;
     font-weight: 800;
+    padding: 25px;
     border: 2px solid red;
 }
 
@@ -128,15 +134,26 @@ button:hover {
 }
 
 .info-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
     border: 2px solid red;
 }
 
 .info-link-text {
+    text-align: center;
+    width: 200px;
+    padding: 10px;
     border: 2px solid red;
 }
 
 .info-link-image {
-    border: 2px solid red;
+    justify-self: center;
+    align-self: center;
+    width: 200px;
+    /* border: 2px solid red; */
 }
 
 .quote {
